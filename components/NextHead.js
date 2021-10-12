@@ -35,13 +35,13 @@ const NextHead = ({
       <link rel="canonical" href={defaultUrl} key="canonical" />
       <meta property="og:locale" content="en" />
       <meta charSet="utf-8" />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={`${title || "Product detail page"}`} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:type" content={pageType} />
       <meta property="og:image" content={defaultImage} key="ogimage" />
 
-      <meta name="description" content={description} />
-      <meta property="og:description" content={description} key="ogdesc" />
+      <meta name="description" content={`${description || "Product description page"}`} />
+      <meta property="og:description" content={`${description || "Product description page"}`} key="ogdesc" />
 
       <meta property="og:url" content={defaultUrl} key="ogurl" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
